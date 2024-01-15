@@ -23,7 +23,7 @@ public class TaskDefinitionRunnable implements Runnable {
         int randVisitors = rand.nextInt(1000) + 1;
 
         var result = restTemplate.exchange(
-                "http://localhost:8080/alpha/units/add-visitors/" + randVisitors,
+                "http://alpha:8080/alpha/units/add-visitors/" + randVisitors,
                 HttpMethod.PATCH,
                 null,
                 String.class);

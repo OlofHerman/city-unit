@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  alpha:
+    build: ./alpha
+    ports:
+      - '8080:8080'
+  beta:
+    build: ./beta
+    ports:
+      - '8081:8081'
